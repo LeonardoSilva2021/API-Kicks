@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kicks.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ec0bdb53562b635f3413ee34304c4a967224cb2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kicks.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kicks.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
