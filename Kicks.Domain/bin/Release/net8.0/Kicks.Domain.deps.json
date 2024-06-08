@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Kicks.Domain/1.0.0": {
+        "dependencies": {
+          "Kicks.Models": "1.0.0"
+        },
+        "runtime": {
+          "Kicks.Domain.dll": {}
+        }
+      },
+      "Kicks.Models/1.0.0": {
+        "runtime": {
+          "Kicks.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Kicks.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kicks.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

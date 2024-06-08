@@ -54,11 +54,16 @@ builder.Services
         };
     });
 
-builder.Services.AddCors(options => options.AddPolicy(name: "NgOrigins",
-    policy =>
-    {
-        policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
-    }));
+builder.Services
+    .AddCors(options => {
+        options.AddPolicy("AllowAllOrigins",
+            builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            });
+    });
 
 var app = builder.Build();
 
@@ -66,7 +71,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseCors("NgOrigins");
+app.UseCors("AllowAllOrigins");
 
 app.UseHttpsRedirection();
 

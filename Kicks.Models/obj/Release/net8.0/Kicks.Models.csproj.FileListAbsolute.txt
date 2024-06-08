@@ -1,0 +1,12 @@
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\bin\Release\net8.0\Kicks.Models.deps.json
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\bin\Release\net8.0\Kicks.Models.dll
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\bin\Release\net8.0\Kicks.Models.pdb
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\Kicks.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\Kicks.Models.AssemblyInfoInputs.cache
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\Kicks.Models.AssemblyInfo.cs
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\Kicks.Models.csproj.CoreCompileInputs.cache
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\Kicks.Models.sourcelink.json
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\Kicks.Models.dll
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\refint\Kicks.Models.dll
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\Kicks.Models.pdb
+C:\Users\buria\Documents\Portifolio\Kicks\Kicks.API.Master\Kicks.API.Master\Kicks.Models\obj\Release\net8.0\ref\Kicks.Models.dll
