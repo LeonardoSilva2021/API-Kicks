@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11EB78EF-2B5C-4662-96D6-61176C93F18B}|Kicks.Data\\Kicks.Data.csproj|c:\\users\\buria\\documents\\portifolio\\kicks\\kicks.api.master\\kicks.api.master\\kicks.data\\database\\kicksdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EB78EF-2B5C-4662-96D6-61176C93F18B}|Kicks.Data\\Kicks.Data.csproj|solutionrelative:kicks.data\\database\\kicksdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{094528C3-3A8B-4F91-9070-6BE4BA154A22}|Kicks.Services\\Kicks.Services.csproj|c:\\users\\buria\\documents\\portifolio\\kicks\\kicks.api.master\\kicks.api.master\\kicks.services\\services\\auth\\classes\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{094528C3-3A8B-4F91-9070-6BE4BA154A22}|Kicks.Services\\Kicks.Services.csproj|solutionrelative:kicks.services\\services\\auth\\classes\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KicksDataContext.cs",
+              "DocumentMoniker": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\Database\\KicksDataContext.cs",
+              "RelativeDocumentMoniker": "Kicks.Data\\Database\\KicksDataContext.cs",
+              "ToolTip": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\Database\\KicksDataContext.cs",
+              "RelativeToolTip": "Kicks.Data\\Database\\KicksDataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:32:37.687Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -18,6 +40,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\Services\\Auth\\Classes\\AuthService.cs",
+              "RelativeDocumentMoniker": "Kicks.Services\\Services\\Auth\\Classes\\AuthService.cs",
+              "ToolTip": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\Services\\Auth\\Classes\\AuthService.cs",
+              "RelativeToolTip": "Kicks.Services\\Services\\Auth\\Classes\\AuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:23:08.378Z",
+              "EditorCaption": ""
             }
           ]
         }

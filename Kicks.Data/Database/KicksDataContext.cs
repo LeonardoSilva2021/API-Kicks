@@ -12,7 +12,7 @@ namespace Kicks.Data.Database
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 15));
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseMySql(
-                    "Server=127.0.0.1; Database=kicks_bd; Uid=root; Pwd=root",
+                    "Server=kicks-database.mysql.database.azure.com; UserID =kicksmaster; Password=Leo050203@; Database=kicks_bd;",
                     serverVersion);
 
             base.OnConfiguring(optionsBuilder);
