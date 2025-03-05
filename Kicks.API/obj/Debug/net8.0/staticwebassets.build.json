@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "vD3T9Vo0zdcydouD6ZpcM6dQy4Iv37FkiSzHN2CPmg4=",
+  "Hash": "IcUGfp8HgEP17XCdd9DyVtb5Q4hm0sj5iZlOI5IwsgA=",
   "Source": "Kicks.API",
   "BasePath": "_content/Kicks.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

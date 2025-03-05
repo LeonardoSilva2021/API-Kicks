@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kicks.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+652e35d7dd10cd75faaacd10b79d6a4eaa6b721e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f11281d6a830ce873d5d2728011e32d7ba0a6ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kicks.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kicks.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F8wqRYF6Vb/sqq7qhtyz4Q+xxIj7QpdDjpd5uKN/CVgaeR/BdwbFZktypPs/ZfA4ZbPs8PcN5YIaVx5WfEZzBA==",
+  "dgSpecHash": "9xggtUi+Sjw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Domain\\Kicks.Domain.csproj",
+  "projectFilePath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

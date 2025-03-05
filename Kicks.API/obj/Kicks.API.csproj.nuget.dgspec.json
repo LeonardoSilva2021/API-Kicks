@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.API\\Kicks.API.csproj": {}
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.API\\Kicks.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.API\\Kicks.API.csproj": {
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.API\\Kicks.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.API\\Kicks.API.csproj",
+        "projectUniqueName": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.API\\Kicks.API.csproj",
         "projectName": "Kicks.API",
-        "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.API\\Kicks.API.csproj",
+        "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.API\\Kicks.API.csproj",
         "packagesPath": "C:\\Users\\buria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.API\\obj\\",
+        "outputPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj": {
-                "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj"
+              "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {
+                "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj"
               },
-              "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\Kicks.Services.csproj": {
-                "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\Kicks.Services.csproj"
+              "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Services\\Kicks.Services.csproj": {
+                "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Services\\Kicks.Services.csproj"
               }
             }
           }
@@ -50,12 +51,25 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Extensions.AspNetCore.Configuration.Secrets": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.13.2, )"
+            },
+            "Azure.Security.KeyVault.Secrets": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -104,18 +118,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\Kicks.Data.csproj": {
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Data\\Kicks.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\Kicks.Data.csproj",
+        "projectUniqueName": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Data\\Kicks.Data.csproj",
         "projectName": "Kicks.Data",
-        "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\Kicks.Data.csproj",
+        "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Data\\Kicks.Data.csproj",
         "packagesPath": "C:\\Users\\buria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\obj\\",
+        "outputPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -130,14 +144,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Domain\\Kicks.Domain.csproj": {
-                "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Domain\\Kicks.Domain.csproj"
+              "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj": {
+                "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj"
               }
             }
           }
@@ -151,12 +166,21 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.13.2, )"
+            },
+            "Azure.Security.KeyVault.Secrets": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -194,18 +218,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Domain\\Kicks.Domain.csproj": {
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Domain\\Kicks.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj",
         "projectName": "Kicks.Domain",
-        "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Domain\\Kicks.Domain.csproj",
+        "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj",
         "packagesPath": "C:\\Users\\buria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Domain\\obj\\",
+        "outputPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -220,14 +244,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj": {
-                "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj"
+              "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {
+                "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj"
               }
             }
           }
@@ -241,7 +266,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -262,18 +288,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj": {
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj",
+        "projectUniqueName": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj",
         "projectName": "Kicks.Models",
-        "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj",
+        "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj",
         "packagesPath": "C:\\Users\\buria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\obj\\",
+        "outputPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -288,6 +314,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -305,7 +332,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -326,18 +354,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\Kicks.Services.csproj": {
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Services\\Kicks.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\Kicks.Services.csproj",
+        "projectUniqueName": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Services\\Kicks.Services.csproj",
         "projectName": "Kicks.Services",
-        "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\Kicks.Services.csproj",
+        "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Services\\Kicks.Services.csproj",
         "packagesPath": "C:\\Users\\buria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Services\\obj\\",
+        "outputPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -352,17 +380,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\Kicks.Data.csproj": {
-                "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Data\\Kicks.Data.csproj"
+              "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Data\\Kicks.Data.csproj": {
+                "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Data\\Kicks.Data.csproj"
               },
-              "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj": {
-                "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj"
+              "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {
+                "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj"
               }
             }
           }
@@ -376,7 +405,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -415,7 +445,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

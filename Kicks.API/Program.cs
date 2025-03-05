@@ -1,4 +1,6 @@
-﻿using Kicks.Data.Database;
+﻿using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+using Kicks.Data.Database;
 using Kicks.Services.Exceptions.Middleware;
 using Kicks.Services.Services.Auth;
 using Kicks.Services.Services.Auth.Classes;
@@ -16,11 +18,19 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuration Azure Key Vault
+builder.Configuration.AddAzureKeyVault(
+    new Uri(builder.Configuration["keyVaultUrl:BaseUrl"]),
+    new AzureCliCredential()
+);
+
 // Add services to the container.
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<KicksDataContext>();
+builder.Services.AddScoped<IConfiguration>(configuration => builder.Configuration);
+builder.Services.AddScoped<SecretClient>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();

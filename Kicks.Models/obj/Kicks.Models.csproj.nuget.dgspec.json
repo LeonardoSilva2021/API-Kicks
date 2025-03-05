@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj": {}
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj": {
+    "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj",
+        "projectUniqueName": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj",
         "projectName": "Kicks.Models",
-        "projectPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\Kicks.Models.csproj",
+        "projectPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj",
         "packagesPath": "C:\\Users\\buria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buria\\Documents\\Portifolio\\Kicks\\Kicks.API.Master\\Kicks.API.Master\\Kicks.Models\\obj\\",
+        "outputPath": "C:\\Users\\buria\\Documents\\PROJETOS\\BACK\\API-Kicks\\Kicks.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -64,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

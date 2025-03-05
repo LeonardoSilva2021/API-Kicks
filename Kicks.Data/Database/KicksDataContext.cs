@@ -1,19 +1,33 @@
-﻿using Kicks.Data.Mappings;
+﻿using Azure.Security.KeyVault.Secrets;
+using Kicks.Data.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kicks.Data.Database
 {
     public class KicksDataContext : DbContext
     {
+
+        private readonly KeyVault _keyVault;
+
         public KicksDataContext() { }
-        public KicksDataContext(Guid id) { }
+
+        public KicksDataContext(KeyVault keyVault) 
+        {
+           _keyVault = keyVault; 
+        }
+
+        public KicksDataContext (KeyVault keyValt, Guid id) { }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            var teste = new KeyVault();
+            var teste2 = teste.GetSecret("kicks-database-string-connection");
+            KeyVaultSecret secret = _keyVault.GetSecret("kicks-database-string-connection");
+
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 15));
+
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseMySql(
-                    "Server=kicks-database.mysql.database.azure.com; UserID =kicksmaster; Password=Leo050203@; Database=kicks_bd;",
-                    serverVersion);
+                optionsBuilder.UseMySql(secret.Value, serverVersion);
 
             base.OnConfiguring(optionsBuilder);
         }
