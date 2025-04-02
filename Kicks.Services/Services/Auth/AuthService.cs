@@ -4,7 +4,6 @@ using Kicks.Models.Auth;
 using Kicks.Models.Usuario;
 using Kicks.Services.Services.Auth.Classes;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -16,14 +15,12 @@ namespace Kicks.Services.Services.Auth
     {
         #region Dependências
         private readonly KicksDataContext _DataContext;
-        private readonly IConfiguration _Configuration;
         #endregion
 
         #region Construtor
-        public AuthService(KicksDataContext dataContext, IConfiguration configuration)
+        public AuthService(KicksDataContext dataContext)
         {
             _DataContext = dataContext;
-            _Configuration = configuration;
         }
         #endregion
 
@@ -40,7 +37,9 @@ namespace Kicks.Services.Services.Auth
                 new Claim("Adiministrador", model.Admin.ToString()),
             };
 
-            var security = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_Configuration["Jwt:Key"]));
+            var key = new KeyVault();
+            var secret = key.GetSecret("key-token-authentication");
+            var security = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret.Value));
             var credecials = new SigningCredentials(security, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
