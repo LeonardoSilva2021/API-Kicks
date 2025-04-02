@@ -1,6 +1,6 @@
 ﻿using Kicks.Models.Categoria;
 
-namespace Kicks.Services.Services.Categoria
+namespace Kicks.Services.Services.Categoria.Classe
 {
     public interface ICategoriaService
     {

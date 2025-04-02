@@ -1,5 +1,5 @@
 ﻿using Kicks.Models.Auth;
-using Kicks.Services.Services.Auth;
+using Kicks.Services.Services.Auth.Classes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kicks.API.Controllers.V1.Auth

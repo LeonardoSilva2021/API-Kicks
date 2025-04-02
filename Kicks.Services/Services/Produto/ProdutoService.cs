@@ -2,10 +2,11 @@
 using Kicks.Domain.Produto;
 using Kicks.Models.Produto;
 using Kicks.Services.Exceptions.BadRequest;
+using Kicks.Services.Services.Produto.Classe;
 using Kicks.Services.Utils;
 using Microsoft.EntityFrameworkCore;
 
-namespace Kicks.Services.Services.Produto.Classe
+namespace Kicks.Services.Services.Produto
 {
     public class ProdutoService : IProdutoService
     {
@@ -86,7 +87,7 @@ namespace Kicks.Services.Services.Produto.Classe
             produto.Preco = model.Preco;
             produto.PrecoPromocao = model.PrecoPromocao;
 
-            var context = _kicksDataContext.Update<ProdutoEntity>(produto);
+            var context = _kicksDataContext.Update(produto);
 
             if (model?.Imagens?.Count > 0)
             {

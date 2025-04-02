@@ -4,10 +4,11 @@ using Kicks.Domain.Enuns;
 using Kicks.Models.Categoria;
 using Kicks.Models.Enuns;
 using Kicks.Services.Exceptions.BadRequest;
+using Kicks.Services.Services.Categoria.Classe;
 using Kicks.Services.Utils;
 using Microsoft.EntityFrameworkCore;
 
-namespace Kicks.Services.Services.Categoria.Classe
+namespace Kicks.Services.Services.Categoria
 {
     public class CategoriaService : ICategoriaService
     {
@@ -62,7 +63,7 @@ namespace Kicks.Services.Services.Categoria.Classe
             categoria.Tipo = (EnumTipoCategoriaEntity) model.Tipo;
             categoria.ImagemUrl = ConvertImageBaseToUrl.ImageUrl(model.ImagemUrl ?? "");
 
-            _kicksDataContext.Update<CategoriaEntity>(categoria);
+            _kicksDataContext.Update(categoria);
 
             _kicksDataContext.SaveChanges();
 

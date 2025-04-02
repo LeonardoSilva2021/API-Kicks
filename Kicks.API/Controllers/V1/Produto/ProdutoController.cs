@@ -1,5 +1,5 @@
 ﻿using Kicks.Models.Produto;
-using Kicks.Services.Services.Produto;
+using Kicks.Services.Services.Produto.Classe;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

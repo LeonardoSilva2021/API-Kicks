@@ -18,19 +18,12 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuration Azure Key Vault
-builder.Configuration.AddAzureKeyVault(
-    new Uri(builder.Configuration["keyVaultUrl:BaseUrl"]),
-    new AzureCliCredential()
-);
-
 // Add services to the container.
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<KicksDataContext>();
-builder.Services.AddScoped<IConfiguration>(configuration => builder.Configuration);
-builder.Services.AddScoped<SecretClient>();
+
+builder.Services.AddScoped<KeyVault>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
@@ -54,13 +47,15 @@ builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
+        var key = new KeyVault();
+        var secret = key.GetSecret("key-token-authentication");
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = false,
             ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret.Value)),
         };
     });
 

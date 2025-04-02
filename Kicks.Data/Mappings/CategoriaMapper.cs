@@ -17,7 +17,7 @@ namespace Kicks.Data.Mappings
                 b.Property(x => x.Tipo);
                 b.Property(x => x.ImagemUrl);
 
-                b.ToTable("categora");
+                b.ToTable("categoria");
             }
         }
     }

@@ -42,7 +42,7 @@ namespace Kicks.Data.Migrations
 
                     b.HasKey("CategoriaId");
 
-                    b.ToTable("categora", (string)null);
+                    b.ToTable("categoria", (string)null);
                 });
 
             modelBuilder.Entity("Kicks.Domain.Produto.ProdutoEntity", b =>

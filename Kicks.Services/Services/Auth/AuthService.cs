@@ -2,7 +2,7 @@
 using Kicks.Domain.Usuario;
 using Kicks.Models.Auth;
 using Kicks.Models.Usuario;
-using Kicks.Services.Services.Auth;
+using Kicks.Services.Services.Auth.Classes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -10,7 +10,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Kicks.Services.Services.Auth.Classes
+namespace Kicks.Services.Services.Auth
 {
     public class AuthService : IAuthService
     {

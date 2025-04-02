@@ -1,6 +1,6 @@
 ﻿using Kicks.Models.Produto;
 
-namespace Kicks.Services.Services.Produto
+namespace Kicks.Services.Services.Produto.Classe
 {
     public interface IProdutoService
     {

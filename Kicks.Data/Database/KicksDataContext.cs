@@ -9,26 +9,28 @@ namespace Kicks.Data.Database
 
         private readonly KeyVault _keyVault;
 
-        public KicksDataContext() { }
-
         public KicksDataContext(KeyVault keyVault) 
         {
            _keyVault = keyVault; 
         }
 
-        public KicksDataContext (KeyVault keyValt, Guid id) { }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var teste = new KeyVault();
-            var teste2 = teste.GetSecret("kicks-database-string-connection");
             KeyVaultSecret secret = _keyVault.GetSecret("kicks-database-string-connection");
 
-            var serverVersion = new MySqlServerVersion(new Version(8, 0, 15));
+            var serverVersion = new MySqlServerVersion(ServerVersion.AutoDetect(secret.Value));
 
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseMySql(secret.Value, serverVersion);
-
+                optionsBuilder.UseMySql(
+                    secret.Value, serverVersion,
+                    mySqlOptions => mySqlOptions.EnableRetryOnFailure
+                    (
+                        maxRetryCount: 5,
+                        maxRetryDelay: TimeSpan.FromSeconds(10),
+                        errorNumbersToAdd: null
+                    )
+                );
+       
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder mb)

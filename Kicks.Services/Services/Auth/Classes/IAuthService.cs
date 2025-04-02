@@ -1,6 +1,6 @@
 ﻿using Kicks.Models.Auth;
 
-namespace Kicks.Services.Services.Auth
+namespace Kicks.Services.Services.Auth.Classes
 {
     public interface IAuthService
     {

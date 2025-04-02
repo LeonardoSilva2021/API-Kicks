@@ -1,6 +1,6 @@
 ﻿using Kicks.Models.Usuario;
 
-namespace Kicks.Services.Services.Usuario
+namespace Kicks.Services.Services.Usuario.Classe
 {
     public interface IUsuarioService
     {

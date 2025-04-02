@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53361222-526E-4903-B486-C75C41F1864C}|Kicks.API\\Kicks.API.csproj|c:\\users\\guilherme.ramos\\documents\\api-kicks-main\\kicks.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53361222-526E-4903-B486-C75C41F1864C}|Kicks.API\\Kicks.API.csproj|solutionrelative:kicks.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.API\\Program.cs",
+              "RelativeDocumentMoniker": "Kicks.API\\Program.cs",
+              "ToolTip": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.API\\Program.cs",
+              "RelativeToolTip": "Kicks.API\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwEgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T20:00:36.709Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

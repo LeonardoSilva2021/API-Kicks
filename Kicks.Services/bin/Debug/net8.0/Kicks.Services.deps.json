@@ -441,7 +441,7 @@
         },
         "runtime": {
           "Kicks.Data.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -452,7 +452,7 @@
         },
         "runtime": {
           "Kicks.Domain.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -460,7 +460,7 @@
       "Kicks.Models/1.0.0": {
         "runtime": {
           "Kicks.Models.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

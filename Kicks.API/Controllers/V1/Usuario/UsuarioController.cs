@@ -1,5 +1,5 @@
 ﻿using Kicks.Models.Usuario;
-using Kicks.Services.Services.Usuario;
+using Kicks.Services.Services.Usuario.Classe;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

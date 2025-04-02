@@ -1,5 +1,5 @@
 ﻿using Kicks.Models.Categoria;
-using Kicks.Services.Services.Categoria;
+using Kicks.Services.Services.Categoria.Classe;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

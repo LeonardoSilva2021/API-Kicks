@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Kicks.Data.Migrations
 {
     [DbContext(typeof(KicksDataContext))]
-    [Migration("20240604030616_AlteracoesBanco")]
-    partial class AlteracoesBanco
+    [Migration("20250402185008_banco")]
+    partial class banco
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +45,7 @@ namespace Kicks.Data.Migrations
 
                     b.HasKey("CategoriaId");
 
-                    b.ToTable("categora", (string)null);
+                    b.ToTable("categoria", (string)null);
                 });
 
             modelBuilder.Entity("Kicks.Domain.Produto.ProdutoEntity", b =>

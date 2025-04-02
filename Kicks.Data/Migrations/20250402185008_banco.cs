@@ -6,94 +6,16 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Kicks.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class AlteracoesBanco : Migration
+    public partial class banco : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.UpdateData(
-                table: "usuario",
-                keyColumn: "Senha",
-                keyValue: null,
-                column: "Senha",
-                value: "");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "Senha",
-                table: "usuario",
-                type: "longtext",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "longtext",
-                oldNullable: true)
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.UpdateData(
-                table: "usuario",
-                keyColumn: "SegundoNome",
-                keyValue: null,
-                column: "SegundoNome",
-                value: "");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "SegundoNome",
-                table: "usuario",
-                type: "longtext",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "longtext",
-                oldNullable: true)
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.UpdateData(
-                table: "usuario",
-                keyColumn: "PrimeiroNome",
-                keyValue: null,
-                column: "PrimeiroNome",
-                value: "");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "PrimeiroNome",
-                table: "usuario",
-                type: "longtext",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "longtext",
-                oldNullable: true)
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.UpdateData(
-                table: "usuario",
-                keyColumn: "Email",
-                keyValue: null,
-                column: "Email",
-                value: "");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "Email",
-                table: "usuario",
-                type: "longtext",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "longtext",
-                oldNullable: true)
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "Admin",
-                table: "usuario",
-                type: "varchar(1)",
-                nullable: false,
-                oldClrType: typeof(bool),
-                oldType: "tinyint(1)")
+            migrationBuilder.AlterDatabase()
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "categora",
+                name: "categoria",
                 columns: table => new
                 {
                     CategoriaId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
@@ -106,7 +28,7 @@ namespace Kicks.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_categora", x => x.CategoriaId);
+                    table.PrimaryKey("PK_categoria", x => x.CategoriaId);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -130,6 +52,28 @@ namespace Kicks.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_produto", x => x.ProdutoId);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "usuario",
+                columns: table => new
+                {
+                    UsuarioId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
+                    PrimeiroNome = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    SegundoNome = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Email = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Senha = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Admin = table.Column<string>(type: "varchar(1)", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_usuario", x => x.UsuarioId);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -194,7 +138,7 @@ namespace Kicks.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "categora");
+                name: "categoria");
 
             migrationBuilder.DropTable(
                 name: "produtoImagem");
@@ -203,56 +147,10 @@ namespace Kicks.Data.Migrations
                 name: "produtoTag");
 
             migrationBuilder.DropTable(
+                name: "usuario");
+
+            migrationBuilder.DropTable(
                 name: "produto");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "Senha",
-                table: "usuario",
-                type: "longtext",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "longtext")
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "SegundoNome",
-                table: "usuario",
-                type: "longtext",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "longtext")
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "PrimeiroNome",
-                table: "usuario",
-                type: "longtext",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "longtext")
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "Email",
-                table: "usuario",
-                type: "longtext",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "longtext")
-                .Annotation("MySql:CharSet", "utf8mb4")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.AlterColumn<bool>(
-                name: "Admin",
-                table: "usuario",
-                type: "tinyint(1)",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "varchar(1)")
-                .OldAnnotation("MySql:CharSet", "utf8mb4");
         }
     }
 }

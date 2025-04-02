@@ -2,9 +2,10 @@
 using Kicks.Domain.Usuario;
 using Kicks.Models.Usuario;
 using Kicks.Services.Exceptions.BadRequest;
+using Kicks.Services.Services.Usuario.Classe;
 using Microsoft.EntityFrameworkCore;
 
-namespace Kicks.Services.Services.Usuario.Classe
+namespace Kicks.Services.Services.Usuario
 {
     public class UsuarioService : IUsuarioService
     {

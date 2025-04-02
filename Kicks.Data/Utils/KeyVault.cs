@@ -1,23 +1,27 @@
-﻿using Azure.Security.KeyVault.Secrets;
-using Microsoft.Extensions.Configuration;
+﻿using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 
 public class KeyVault
 {
-    private readonly IConfiguration _configuration;
     private readonly SecretClient _secretClient;
 
-    public KeyVault() { }
+    public KeyVault() 
+    { 
+        var key = Environment.GetEnvironmentVariable("KEY_VAULT_URI") ?? "";
 
-    public KeyVault(IConfiguration configuration, SecretClient secretClient)
+
+        var client = new SecretClient(new Uri(key), new DefaultAzureCredential());
+        _secretClient = client;
+    }
+
+    public KeyVault(SecretClient secretClient)
     {
-        _configuration = configuration;
         _secretClient = secretClient;
     }
 
     public KeyVaultSecret GetSecret(string secretName)
     {
-        var client = _configuration["keyVaultUrl:BaseUrl"];
-        KeyVaultSecret secret = _secretClient.GetSecret(secretName, client);
+        KeyVaultSecret secret = _secretClient.GetSecret(secretName);
         return secret;
     }
 }
