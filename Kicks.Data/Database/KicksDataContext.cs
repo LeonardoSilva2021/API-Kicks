@@ -6,14 +6,18 @@ namespace Kicks.Data.Database
 {
     public class KicksDataContext : DbContext
     {
-
+        #region Dependência
         private readonly KeyVault _keyVault;
+        #endregion
 
-        public KicksDataContext(KeyVault keyVault) 
+        #region Construtores
+        public KicksDataContext(KeyVault keyVault)
         {
-           _keyVault = keyVault; 
+            _keyVault = keyVault;
         }
+        #endregion
 
+        #region Configuração da String de Conexão do Banco
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             KeyVaultSecret secret = _keyVault.GetSecret("kicks-database-string-connection");
@@ -30,9 +34,12 @@ namespace Kicks.Data.Database
                         errorNumbersToAdd: null
                     )
                 );
-       
+
             base.OnConfiguring(optionsBuilder);
         }
+        #endregion
+
+        #region Passando os Modelos e Mappers do Banco
         protected override void OnModelCreating(ModelBuilder mb)
         {
             mb.ApplyConfiguration(new UsuarioMapper.Usuario());
@@ -40,6 +47,7 @@ namespace Kicks.Data.Database
             mb.ApplyConfiguration(new ProdutoImagemMapper.ProdutoImagem());
             mb.ApplyConfiguration(new ProdutoTagMapper.ProdutoTag());
             mb.ApplyConfiguration(new CategoriaMapper.Categoria());
-        }
+        } 
+        #endregion
     }
 }

@@ -1,6 +1,4 @@
-﻿using Azure.Identity;
-using Azure.Security.KeyVault.Secrets;
-using Kicks.Data.Database;
+﻿using Kicks.Data.Database;
 using Kicks.Services.Exceptions.Middleware;
 using Kicks.Services.Services.Auth;
 using Kicks.Services.Services.Auth.Classes;

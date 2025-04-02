@@ -3,10 +3,13 @@ using Azure.Security.KeyVault.Secrets;
 
 public class KeyVault
 {
+    #region Dependências 
     private readonly SecretClient _secretClient;
+    #endregion
 
-    public KeyVault() 
-    { 
+    #region Construtores
+    public KeyVault()
+    {
         var key = Environment.GetEnvironmentVariable("KEY_VAULT_URI") ?? "";
 
 
@@ -18,10 +21,13 @@ public class KeyVault
     {
         _secretClient = secretClient;
     }
+    #endregion
 
+    #region Buscar Chaves do Key Vault
     public KeyVaultSecret GetSecret(string secretName)
     {
         KeyVaultSecret secret = _secretClient.GetSecret(secretName);
         return secret;
-    }
+    } 
+    #endregion
 }
