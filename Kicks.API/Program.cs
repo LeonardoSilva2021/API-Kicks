@@ -16,10 +16,10 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var instrumentationKey = Environment.GetEnvironmentVariable("APPINSIGHTS_INSTRUMENTATION_KEY");
-var ingestionEndpoint = Environment.GetEnvironmentVariable("APPINSIGHTS_INGESTION_ENDPOINT");
-var liveEndpoint = Environment.GetEnvironmentVariable("APPINSIGHTS_LIVE_ENDPOINT");
-var applicationId = Environment.GetEnvironmentVariable("APPINSIGHTS_APPLICATION_ID");
+var instrumentationKey = Environment.GetEnvironmentVariable("InstrumentationKey");
+var ingestionEndpoint = Environment.GetEnvironmentVariable("IngestionEndpoint");
+var liveEndpoint = Environment.GetEnvironmentVariable("LiveEndpoint");
+var applicationId = Environment.GetEnvironmentVariable("ApplicationId");
 
 var appInsightsConnectionString = $"InstrumentationKey={instrumentationKey};IngestionEndpoint={ingestionEndpoint};LiveEndpoint={liveEndpoint};ApplicationId={applicationId}";
 
