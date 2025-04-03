@@ -16,6 +16,21 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var instrumentationKey = Environment.GetEnvironmentVariable("APPINSIGHTS_INSTRUMENTATION_KEY");
+var ingestionEndpoint = Environment.GetEnvironmentVariable("APPINSIGHTS_INGESTION_ENDPOINT");
+var liveEndpoint = Environment.GetEnvironmentVariable("APPINSIGHTS_LIVE_ENDPOINT");
+var applicationId = Environment.GetEnvironmentVariable("APPINSIGHTS_APPLICATION_ID");
+
+var appInsightsConnectionString = $"InstrumentationKey={instrumentationKey};IngestionEndpoint={ingestionEndpoint};LiveEndpoint={liveEndpoint};ApplicationId={applicationId}";
+
+Console.WriteLine("Conexão com o Application Insights configurada.");
+
+// Configurando o Application Insights com a string de conexão combinada
+builder.Services.AddApplicationInsightsTelemetry(options =>
+{
+    options.ConnectionString = appInsightsConnectionString;
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

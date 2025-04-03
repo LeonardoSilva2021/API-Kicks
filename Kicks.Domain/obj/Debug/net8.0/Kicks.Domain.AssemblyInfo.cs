@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kicks.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+694bb9b125c0f1ed4afbfd51f0504dd285a5fa84")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kicks.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kicks.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

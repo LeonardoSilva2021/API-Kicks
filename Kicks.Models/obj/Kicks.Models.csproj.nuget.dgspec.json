@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Models\\Kicks.Models.csproj": {}
+    "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Models\\Kicks.Models.csproj": {
+    "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Models\\Kicks.Models.csproj",
+        "projectUniqueName": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj",
         "projectName": "Kicks.Models",
-        "projectPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Models\\Kicks.Models.csproj",
+        "projectPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj",
         "packagesPath": "C:\\Users\\GUILHERME.RAMOS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Models\\obj\\",
+        "outputPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

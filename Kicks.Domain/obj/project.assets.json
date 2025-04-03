@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Domain\\Kicks.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj",
       "projectName": "Kicks.Domain",
-      "projectPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Domain\\Kicks.Domain.csproj",
+      "projectPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Domain\\Kicks.Domain.csproj",
       "packagesPath": "C:\\Users\\GUILHERME.RAMOS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Domain\\obj\\",
+      "outputPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Models\\Kicks.Models.csproj": {
-              "projectPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Models\\Kicks.Models.csproj"
+            "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj": {
+              "projectPath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Models\\Kicks.Models.csproj"
             }
           }
         }

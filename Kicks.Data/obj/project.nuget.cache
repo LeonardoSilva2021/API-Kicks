@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g8bqRbfwIcQ=",
+  "dgSpecHash": "K5WqoDkvq6Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks-main\\Kicks.Data\\Kicks.Data.csproj",
+  "projectFilePath": "C:\\Users\\GUILHERME.RAMOS\\Documents\\API-Kicks\\Kicks.Data\\Kicks.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GUILHERME.RAMOS\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\GUILHERME.RAMOS\\.nuget\\packages\\azure.identity\\1.13.2\\azure.identity.1.13.2.nupkg.sha512",
