@@ -1,4 +1,52 @@
+# Pastas do Visual Studio
 .vs/
+.vscode/
+
+# Pastas de build
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# Arquivos temporários
+*.user
+*.suo
+*.cache
+*.log
+
+# Arquivos do Rider (caso use JetBrains)
+.idea/
+*.sln.iml
+
+# Configurações locais
+*.DotSettings.user
+
+# Logs do build e publish
+*.tlog
+*.pidb
+*.mdb
+
+# Test Results
+TestResults/
+*.coverage
+*.coveragexml
+
+# Pacotes
+*.nupkg
+*.snupkg
+packages/
+
+# Arquivos gerados por build
+Generated\ Files/
+
+# Arquivos específicos do seu projeto
 Kicks.API/bin/
 Kicks.API/obj/
-Kicks.API/debug/
+Kicks.Data/bin/
+Kicks.Data/obj/
+Kicks.Domain/bin/
+Kicks.Domain/obj/
+Kicks.Models/bin/
+Kicks.Models/obj/
+Kicks.Services/bin/
+Kicks.Services/obj/
