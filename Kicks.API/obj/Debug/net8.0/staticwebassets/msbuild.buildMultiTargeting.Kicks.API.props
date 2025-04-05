@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Kicks.API.props" />
-</Project>
