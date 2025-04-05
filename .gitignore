@@ -1,3 +1,4 @@
 .vs/
-bin/
-obj/
+Kicks.API/bin/
+Kicks.API/obj/
+Kicks.API/debug/
