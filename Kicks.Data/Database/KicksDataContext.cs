@@ -1,4 +1,4 @@
-﻿using Azure.Security.KeyVault.Secrets;
+﻿using Kicks.Azure.Services.KeyVault.Classe;
 using Kicks.Data.Mappings;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,26 +7,27 @@ namespace Kicks.Data.Database
     public class KicksDataContext : DbContext
     {
         #region Dependência
-        private readonly KeyVault _keyVault;
+        private readonly IKeyVaultService _keyVaultService;
         #endregion
 
         #region Construtores
-        public KicksDataContext(KeyVault keyVault)
+        public KicksDataContext(IKeyVaultService keyVaultService)
         {
-            _keyVault = keyVault;
+            _keyVaultService = keyVaultService;
         }
         #endregion
 
         #region Configuração da String de Conexão do Banco
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override async void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            KeyVaultSecret secret = _keyVault.GetSecret("kicks-database-string-connection");
+            var secret = await _keyVaultService.GetSecretAsync("kicks-database-string-connection");
 
-            var serverVersion = new MySqlServerVersion(ServerVersion.AutoDetect(secret.Value));
+            var serverVersion = new MySqlServerVersion(ServerVersion.AutoDetect(secret));
 
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseMySql(
-                    secret.Value, serverVersion,
+                    secret, 
+                    serverVersion,
                     mySqlOptions => mySqlOptions.EnableRetryOnFailure
                     (
                         maxRetryCount: 5,

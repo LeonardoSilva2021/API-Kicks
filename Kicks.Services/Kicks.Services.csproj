@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Kicks.Azure\Kicks.Azure.csproj" />
     <ProjectReference Include="..\Kicks.Data\Kicks.Data.csproj" />
     <ProjectReference Include="..\Kicks.Models\Kicks.Models.csproj" />
   </ItemGroup>

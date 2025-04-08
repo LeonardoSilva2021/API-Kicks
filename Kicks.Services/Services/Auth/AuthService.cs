@@ -1,4 +1,5 @@
-﻿using Kicks.Data.Database;
+﻿using Kicks.Azure.Services.KeyVault.Classe;
+using Kicks.Data.Database;
 using Kicks.Domain.Usuario;
 using Kicks.Models.Auth;
 using Kicks.Models.Usuario;
@@ -15,31 +16,30 @@ namespace Kicks.Services.Services.Auth
     {
         #region Dependências
         private readonly KicksDataContext _DataContext;
+        private readonly IKeyVaultService _keyVaultService;
         #endregion
 
         #region Construtor
-        public AuthService(KicksDataContext dataContext)
+        public AuthService(KicksDataContext dataContext, IKeyVaultService keyVaultService)
         {
             _DataContext = dataContext;
+            _keyVaultService = keyVaultService;
         }
         #endregion
 
         #region Criar Token
-        public string GenereteToken(UsuarioModel model)
+        public async Task<string> GenereteToken(UsuarioModel model)
         {
-
             var claims = new[]
             {
-
                 new Claim("PrimeiroNomeUsuario", model.PrimeiroNome),
                 new Claim("SegundoNomeUsuario", model.SegundoNome),
                 new Claim("Email", model.Email),
                 new Claim("Adiministrador", model.Admin.ToString()),
             };
 
-            var key = new KeyVault();
-            var secret = key.GetSecret("key-token-authentication");
-            var security = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret.Value));
+            var secret = await _keyVaultService.GetSecretAsync("key-token-authentication");
+            var security = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
             var credecials = new SigningCredentials(security, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
@@ -72,7 +72,7 @@ namespace Kicks.Services.Services.Auth
             if (context == null)
                 throw new Exception("Email ou senha invalidos.");
 
-            var token = GenereteToken(context);
+            var token = await GenereteToken(context);
 
             var response = new TokenModel()
             {
