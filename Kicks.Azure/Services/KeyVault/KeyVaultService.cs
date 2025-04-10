@@ -28,7 +28,7 @@ namespace Kicks.Azure.Services.KeyVault
         } 
         #endregion
 
-        #region Get Secret Key Vault
+        #region Get Secret Key Vault Async
         public async Task<string> GetSecretAsync(string secretName)
         {
             KeyVaultSecret response = await _secretClient.GetSecretAsync(secretName);
@@ -36,6 +36,24 @@ namespace Kicks.Azure.Services.KeyVault
             if (response?.Value == null)
                 throw new InvalidOperationException($"O segredo '{secretName}' não foi encontrado.");
 
+
+            return response.Value;
+        }
+        #endregion
+
+        #region Get Secret Key Vault
+        public static string GetSecret(string secretName)
+        {
+            var keyVaultUri = Environment.GetEnvironmentVariable("KEY_VAULT_URI");
+
+            if (string.IsNullOrWhiteSpace(keyVaultUri))
+                throw new ArgumentException("A URI do Key Vault não foi definida nas variáveis de ambiente.");
+
+            var secretClient = new SecretClient(new Uri(keyVaultUri), new DefaultAzureCredential());
+            KeyVaultSecret response = secretClient.GetSecret(secretName);
+
+            if (response?.Value == null)
+                throw new InvalidOperationException($"O segredo '{secretName}' não foi encontrado.");
 
             return response.Value;
         } 
